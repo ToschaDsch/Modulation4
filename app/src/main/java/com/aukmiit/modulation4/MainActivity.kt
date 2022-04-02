@@ -15,17 +15,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        (application as AppMainState).showAdIfAvailable(this){
+        initAdMob()                                 //Ads
+        (application as AppMainState).showAdIfAvailable(this){      //Ads
+                                                                            //Ads
+        }                                                                   //Ads
 
-        }
-
-        initAdMob()
     }
 
-    private fun initAdMob() {
-        MobileAds.initialize(this) {}
-
-        val adRequest = AdRequest.Builder().build()
-        binding.adView.loadAd(adRequest)
-    }
+    private fun initAdMob() {                       //  Ads!
+        MobileAds.initialize(this) {}        //  Ads!
+                                                    //  Ads!
+        val adRequest = AdRequest.Builder().build() //  Ads!
+        binding.adView.loadAd(adRequest)            //  Ads!
+    }                                               //  Ads!
 }
